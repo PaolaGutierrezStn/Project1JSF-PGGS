@@ -4,17 +4,20 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/universidad</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/college2</property>
     <property name="hibernate.connection.username">postgres</property>
-    <property name="hibernate.connection.password">lobomalo7</property>
+    <property name="hibernate.connection.password">123</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.connection.pool_size">1</property>
-    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
     
-    <mapping class="utng.modelo.Usuario"/>
-    <mapping class="utng.modelo.Rol"/>
-    <mapping class="utng.modelo.Modulo"/>
-    <mapping class="utng.modelo.Ingrediente"/>
-    <mapping class="utng.modelo.Platillo"/>
+    <mapping class="utng.model.Client"/>
+    <mapping class="utng.model.Rol"/>
+    <mapping class="utng.model.Module"/>
+    <mapping class="utng.model.Ingredient"/>
+    <mapping class="utng.model.Saucer"/>
+    <mapping class="utng.model.Food"/>
+    <mapping class="utng.model.Country"/>
+    
   </session-factory>
 </hibernate-configuration>

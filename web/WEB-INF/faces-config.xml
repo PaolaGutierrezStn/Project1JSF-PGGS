@@ -12,61 +12,76 @@
     <navigation-rule>
         <from-view-id>*</from-view-id>
         <navigation-case>
-            <from-outcome>Inicio</from-outcome>
+            <from-outcome>Start</from-outcome>
             <to-view-id>/index.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
-            <from-outcome>Usuarios</from-outcome>
-            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+            <from-outcome>Clients</from-outcome>
+            <to-view-id>/clients/list-clients.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>Roles</from-outcome>
             <to-view-id>/roles/list-roles.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
-            <from-outcome>Modulos</from-outcome>
-            <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+            <from-outcome>Modules</from-outcome>
+            <to-view-id>/modules/list-modules.xhtml</to-view-id>
         </navigation-case>
         
         
         
         <navigation-case>
-            <from-outcome>Ingredientes</from-outcome>
-            <to-view-id>/ingredientes/list-ingredientes.xhtml</to-view-id>
+            <from-outcome>Ingredients</from-outcome>
+            <to-view-id>/ingredients/list-ingredients.xhtml</to-view-id>
         </navigation-case>
         
         <navigation-case>
-            <from-outcome>Platillos</from-outcome>
-            <to-view-id>/platillos/list-platillos.xhtml</to-view-id>
+            <from-outcome>Saucers</from-outcome>
+            <to-view-id>/saucers/list-saucers.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Foods</from-outcome>
+            <to-view-id>/foods/list-foods.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Countries</from-outcome>
+            <to-view-id>/countries/list-countries.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Exit</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
     
     
     <navigation-rule>
-        <from-view-id>/usuarios/form-usuarios.xhtml</from-view-id>
+        <from-view-id>/clients/form-clients.xhtml</from-view-id>
         <navigation-case>
-            <from-outcome>Guardar</from-outcome>
-            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+            <from-outcome>Save</from-outcome>
+            <to-view-id>/clients/list-clients.xhtml</to-view-id>
         </navigation-case>
           <navigation-case>
-            <from-outcome>Eliminar</from-outcome>
-            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+            <from-outcome>Delete</from-outcome>
+            <to-view-id>/clients/list-clients.xhtml</to-view-id>
         </navigation-case>
           <navigation-case>
-            <from-outcome>Cancelar</from-outcome>
-            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+            <from-outcome>Cancel</from-outcome>
+            <to-view-id>/clients/list-clients.xhtml</to-view-id>
         </navigation-case>
         </navigation-rule>
         
         <navigation-rule>
-            <from-view-id>/usuarios/list-usuarios.xhtml</from-view-id>
+            <from-view-id>/clients/list-clients.xhtml</from-view-id>
             <navigation-case>
-                <from-outcome>Iniciar</from-outcome>
-                <to-view-id>/usuarios/form-usuarios.xhtml</to-view-id>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/clients/form-clients.xhtml</to-view-id>
             </navigation-case>
             <navigation-case>
-                <from-outcome>Editar</from-outcome>
-                <to-view-id>/usuarios/form-usuarios.xhtml</to-view-id>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/clients/form-clients.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         
@@ -76,26 +91,26 @@
         <navigation-rule>
              <from-view-id>/roles/form-roles.xhtml</from-view-id>
              <navigation-case>
-                <from-outcome>Guardar</from-outcome>
+                <from-outcome>Save</from-outcome>
                 <to-view-id>/roles/list-roles.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Eliminar</from-outcome>
+                <from-outcome>Delete</from-outcome>
                 <to-view-id>/roles/list-roles.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Cancelar</from-outcome>
+                <from-outcome>Cancel</from-outcome>
                 <to-view-id>/roles/list-roles.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         <navigation-rule>
              <from-view-id>/roles/list-roles.xhtml</from-view-id>
              <navigation-case>
-                <from-outcome>Iniciar</from-outcome>
+                <from-outcome>Start</from-outcome>
                 <to-view-id>/roles/form-roles.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Editar</from-outcome>
+                <from-outcome>Edit</from-outcome>
                 <to-view-id>/roles/form-roles.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
@@ -104,95 +119,149 @@
         
         
          <navigation-rule>
-             <from-view-id>/modulos/form-modulos.xhtml</from-view-id>
+             <from-view-id>/modules/form-modules.xhtml</from-view-id>
              
              <navigation-case>
-                <from-outcome>Guardar</from-outcome>
-                <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+                <from-outcome>Save</from-outcome>
+                <to-view-id>/modules/list-modules.xhtml</to-view-id>
             </navigation-case>
             
             
             <navigation-case>
-                <from-outcome>Eliminar</from-outcome>
-                <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+                <from-outcome>Delete</from-outcome>
+                <to-view-id>/modules/list-modules.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Cancelar</from-outcome>
-                <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+                <from-outcome>Cancel</from-outcome>
+                <to-view-id>/modules/list-modules.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         
          <navigation-rule>
-             <from-view-id>/modulos/list-modulos.xhtml</from-view-id>
+             <from-view-id>/modules/list-modules.xhtml</from-view-id>
              <navigation-case>
-                <from-outcome>Iniciar</from-outcome>
-                <to-view-id>/modulos/form-modulos.xhtml</to-view-id>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/modules/form-modules.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Editar</from-outcome>
-                <to-view-id>/modulos/form-modulos.xhtml</to-view-id>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/modules/form-modules.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
                 
         <navigation-rule>
-             <from-view-id>/ingredientes/form-ingredientes.xhtml</from-view-id>
+             <from-view-id>/ingredients/form-ingredients.xhtml</from-view-id>
              
              <navigation-case>
-                <from-outcome>Guardar</from-outcome>
-                <to-view-id>/ingredientes/list-ingredientes.xhtml</to-view-id>
+                <from-outcome>Save</from-outcome>
+                <to-view-id>/ingredients/list-ingredients.xhtml</to-view-id>
             </navigation-case>
             
             
             <navigation-case>
-                <from-outcome>Eliminar</from-outcome>
-                <to-view-id>/ingredientes/list-ingredientes.xhtml</to-view-id>
+                <from-outcome>Delete</from-outcome>
+                <to-view-id>/ingredients/list-ingredients.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Cancelar</from-outcome>
-                <to-view-id>/ingredientes/list-ingredientes.xhtml</to-view-id>
+                <from-outcome>Cancel</from-outcome>
+                <to-view-id>/ingredients/list-ingredients.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         
          <navigation-rule>
-             <from-view-id>/ingredientes/list-ingredientes.xhtml</from-view-id>
+             <from-view-id>/ingredients/list-ingredients.xhtml</from-view-id>
              <navigation-case>
-                <from-outcome>Iniciar</from-outcome>
-                <to-view-id>/ingredientes/form-ingredientes.xhtml</to-view-id>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/ingredients/form-ingredients.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Editar</from-outcome>
-                <to-view-id>/ingredientes/form-ingredientes.xhtml</to-view-id>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/ingredients/form-ingredients.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>     
         
         <navigation-rule>
-             <from-view-id>/platillos/form-platillos.xhtml</from-view-id>
+             <from-view-id>/saucers/form-saucers.xhtml</from-view-id>
              
              <navigation-case>
-                <from-outcome>Guardar</from-outcome>
-                <to-view-id>/platillos/list-platillos.xhtml</to-view-id>
+                <from-outcome>Save</from-outcome>
+                <to-view-id>/saucers/list-saucers.xhtml</to-view-id>
             </navigation-case>
             
             
             <navigation-case>
-                <from-outcome>Eliminar</from-outcome>
-                <to-view-id>/platillos/list-platillos.xhtml</to-view-id>
+                <from-outcome>Delete</from-outcome>
+                <to-view-id>/saucers/list-saucers.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Cancelar</from-outcome>
-                <to-view-id>/platillos/list-platillos.xhtml</to-view-id>
+                <from-outcome>Cancel</from-outcome>
+                <to-view-id>/saucers/list-saucers.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         
          <navigation-rule>
-             <from-view-id>/platillos/list-platillos.xhtml</from-view-id>
+             <from-view-id>/saucers/list-saucers.xhtml</from-view-id>
              <navigation-case>
-                <from-outcome>Iniciar</from-outcome>
-                <to-view-id>/platillos/form-platillos.xhtml</to-view-id>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/saucers/form-saucers.xhtml</to-view-id>
             </navigation-case>
              <navigation-case>
-                <from-outcome>Editar</from-outcome>
-                <to-view-id>/platillos/form-platillos.xhtml</to-view-id>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/saucers/form-saucers.xhtml</to-view-id>
+            </navigation-case>
+        </navigation-rule>
+        
+        <navigation-rule>
+             <from-view-id>/foods/form-foods.xhtml</from-view-id>
+             <navigation-case>
+                <from-outcome>Save</from-outcome>
+                <to-view-id>/foods/list-foods.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Delete</from-outcome>
+                <to-view-id>/foods/list-foods.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Cancel</from-outcome>
+                <to-view-id>/foods/list-foods.xhtml</to-view-id>
+            </navigation-case>
+        </navigation-rule>
+        <navigation-rule>
+             <from-view-id>/foods/list-foods.xhtml</from-view-id>
+             <navigation-case>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/foods/form-foods.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/foods/form-foods.xhtml</to-view-id>
+            </navigation-case>
+        </navigation-rule>
+        
+        <navigation-rule>
+             <from-view-id>/countries/form-countries.xhtml</from-view-id>
+             <navigation-case>
+                <from-outcome>Save</from-outcome>
+                <to-view-id>/countries/list-countries.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Delete</from-outcome>
+                <to-view-id>/countries/list-countries.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Cancel</from-outcome>
+                <to-view-id>/countries/list-countries.xhtml</to-view-id>
+            </navigation-case>
+        </navigation-rule>
+        <navigation-rule>
+             <from-view-id>/countries/list-countries.xhtml</from-view-id>
+             <navigation-case>
+                <from-outcome>Start</from-outcome>
+                <to-view-id>/countries/form-countries.xhtml</to-view-id>
+            </navigation-case>
+             <navigation-case>
+                <from-outcome>Edit</from-outcome>
+                <to-view-id>/countries/form-countries.xhtml</to-view-id>
             </navigation-case>
         </navigation-rule>
         
@@ -200,11 +269,11 @@
        <navigation-rule>
          <from-view-id>/login.xhtml</from-view-id>
         <navigation-case>
-            <from-outcome>Correcto</from-outcome>
+            <from-outcome>Right</from-outcome>
             <to-view-id>/index.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
-            <from-outcome>Incorrecto</from-outcome>
+            <from-outcome>Incorrect</from-outcome>
             <to-view-id>/login.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>  

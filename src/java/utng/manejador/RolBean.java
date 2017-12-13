@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import utng.datos.RolDAO;
-import utng.modelo.Rol;
+import utng.data.RolDAO;
+import utng.model.Rol;
 
 @ManagedBean
 @SessionScoped
@@ -31,7 +31,7 @@ public class RolBean implements Serializable{
     }
     
     
-    public String listar(){
+    public String list(){
         RolDAO dao = new RolDAO();
         try {
             roles=dao.getAll();
@@ -41,7 +41,7 @@ public class RolBean implements Serializable{
         return "Roles";
     }
     
-    public String eliminar(){
+    public String delete(){
          RolDAO dao = new RolDAO();
         try {
             dao.delete(rol);
@@ -49,15 +49,15 @@ public class RolBean implements Serializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "Eliminar";
+        return "Delete";
     }
     
-    public String iniciar(){
+    public String start(){
         rol= new Rol();
-        return "Iniciar";
+        return "Start";
     }
     
-    public String guardar(){
+    public String save(){
         RolDAO dao = new RolDAO();
         try {
             if(rol.getIdRol()!= 0){
@@ -69,16 +69,16 @@ public class RolBean implements Serializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "Guardar";
+        return "Save";
     }
     
-    public String cancelar(){
-    return "Cancelar";
+    public String cancel(){
+    return "Cancel";
     }
     
-    public String editar(Rol rol){
+    public String edit(Rol rol){
         this.rol=rol;
-        return "Editar";
+        return "Edit";
     }
     
 }

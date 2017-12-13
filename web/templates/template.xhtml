@@ -7,23 +7,28 @@
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>#{str.formHeader}</title>
-        <f:event listener="#{plantillaBean.checkLogin()}"
+        <f:event listener="#{templateBean.checkLogin()}"
                  type="preRenderView"></f:event>
         </h:head>
-    <h:body>
+    <h:body style="background-color:#E0ECF8">
         <div id="pagina">
             <div id="header">
                 <h1>#{str.systemTitle}</h1>
             </div>
             <div id="menu">
                 <h:form>
-                    <p:menubar>
-                        <p:menuitem value="Inicio" action="Inicio"></p:menuitem>
-                        <p:menuitem value="Usuarios" action="#{usuarioBean.listar()}"></p:menuitem>
-                        <p:menuitem value="Modulos" action="#{moduloBean.listar()}"></p:menuitem>
-                        <p:menuitem value="Roles" action="#{rolBean.listar()}"></p:menuitem>
-                        <p:menuitem value="Ingredientes" action="#{ingredienteBean.listar()}"></p:menuitem>
-                        <p:menuitem value="Platillos" action="#{platilloBean.listar()}"></p:menuitem>
+                    <p:menubar style="background-color:#9F81F7">
+                        <p:menuitem value="Start" action="Start"></p:menuitem>
+                        <p:menuitem value="Clients" action="#{clientBean.list()}"></p:menuitem>
+                        <p:menuitem value="Modules" action="#{moduleBean.list()}"></p:menuitem>
+                        <p:menuitem value="Roles" action="#{rolBean.list()}"></p:menuitem>
+                        <p:menuitem value="Ingredients" action="#{ingredientBean.list()}"></p:menuitem>
+                        <p:menuitem value="Saucers" action="#{saucerBean.list()}"></p:menuitem>
+                        <p:menuitem value="Foods" action="#{foodBean.list()}"></p:menuitem>
+                        <p:menuitem value="Countries" action="#{countryBean.list()}"></p:menuitem>
+                        <f:facet name="options">
+                            <p:commandButton value="Logout" action="#{clientBean.logout()}" style="background-color:#F5A9F2"/>
+                        </f:facet>
                     </p:menubar>
                 </h:form>
             </div>

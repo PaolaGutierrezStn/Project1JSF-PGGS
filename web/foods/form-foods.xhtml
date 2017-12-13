@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{str.foodFormTitle}</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/templates/template.xhtml">
+            <ui:define name="contenido">
+                <h2>#{str.foodFormHeader}</h2>
+                <p:fieldset legend="#{str.foodLegendForm}">
+                <h:form>
+                    <p:inputText placeholder="#{str.foodNamePrompt}" value="#{foodBean.food.name}"></p:inputText>
+                    <p:inputText placeholder="#{str.foodDescriptionPrompt}" value="#{foodBean.food.description}"></p:inputText>
+                    <p:inputText placeholder="#{str.foodPricePrompt}" value="#{foodBean.food.price}"></p:inputText>
+                    <p:inputText placeholder="#{str.foodTypePrompt}" value="#{foodBean.food.type}"></p:inputText>
+                    <p:selectOneMenu value="#{foodBean.food.country.idCountry}">
+                        <f:selectItems value="#{foodBean.countries}" var="p" itemLabel="#{p.name}" itemValue="#{p.idCountry}"></f:selectItems>                                     
+                    </p:selectOneMenu>
+                    
+                    <p:commandButton value="#{str.buttonSave}" action="#{foodBean.save()}" style="background-color:#F5A9F2"></p:commandButton>
+                    <p:commandButton value="#{str.buttonDelete}" action="#{foodBean.delete()}" style="background-color:#F5A9F2"></p:commandButton>
+                    <p:commandButton value="#{str.buttonCancel}" action="#{foodBean.cancel()}" style="background-color:#F5A9F2"></p:commandButton>
+                </h:form>
+                </p:fieldset>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

@@ -14,10 +14,11 @@
                 <h2>#{str.rolFormHeader}</h2>
                 <p:fieldset legend="#{str.rolLegendForm}">
                 <h:form>
-                    <p:inputText placeholder="#{str.rolNamePrompt}" value="#{rolBean.rol.nombre}"></p:inputText>
-                    <p:commandButton value="#{str.buttonSave}" action="#{rolBean.guardar()}"></p:commandButton>
-                    <p:commandButton value="#{str.buttonDelete}" action="#{rolBean.eliminar()}"></p:commandButton>
-                    <p:commandButton value="#{str.buttonCancel}" action="#{rolBean.cancelar()}"></p:commandButton>
+                    <p:inputText placeholder="#{str.rolNamePrompt}" value="#{rolBean.rol.name}"></p:inputText>
+                    
+                    <p:commandButton value="#{str.buttonSave}" action="#{rolBean.save()}" style="background-color:#F5A9F2"></p:commandButton>
+                    <p:commandButton value="#{str.buttonDelete}" action="#{rolBean.delete()}" style="background-color:#F5A9F2"></p:commandButton>
+                    <p:commandButton value="#{str.buttonCancel}" action="#{rolBean.cancel()}" style="background-color:#F5A9F2"></p:commandButton>
                 </h:form>
                 </p:fieldset>
             </ui:define>

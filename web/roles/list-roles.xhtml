@@ -15,16 +15,16 @@
                 <ui:define name="contenido">
                     <h1>#{str.rolListTitle}</h1>
                     <h:form>
-                        <p:commandButton value="#{str.buttonAdd}" action="#{rolBean.iniciar()}" />
+                        <p:commandButton value="#{str.buttonAdd}" action="#{rolBean.start()}" style="background-color:#F5A9F2" />
                     </h:form>
                     <p:dataTable value="#{rolBean.roles}" var="r">
                         <p:column headerText="#{str.action}">
                             <h:form>
-                                <p:commandButton value="#{str.buttonEdit}" action="#{rolBean.editar(r)}" />
+                                <p:commandButton value="#{str.buttonEdit}" action="#{rolBean.edit(r)}" style="background-color:#F5A9F2" />
                             </h:form>
                         </p:column>
                         <p:column headerText="#{str.rolNameHeader}">
-                            <p:outputLabel value="#{r.nombre}"></p:outputLabel>
+                            <p:outputLabel value="#{r.name}"></p:outputLabel>
                         </p:column>
                     </p:dataTable>
                 </ui:define>
